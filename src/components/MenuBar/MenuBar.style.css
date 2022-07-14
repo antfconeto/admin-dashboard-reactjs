@@ -1,4 +1,4 @@
-.menuBar{
+.menuBar {
     position: fixed;
     width: 300px;
     height: 100vh;
@@ -9,28 +9,32 @@
     scroll-behavior: unset;
 
 }
-.content{
+
+.content {
     width: 100%;
     height: 100%;
 }
 
-.content .title{
+.content .title {
     color: var(--white);
     white-space: nowrap;
     display: flex;
     align-items: flex-start;
     margin-top: 50px;
 }
-.content .title span{
+
+.content .title span {
     font-size: 30px;
-    margin: 5px 15px ;
+    margin: 5px 15px;
     cursor: pointer;
 }
-.content ul{
+
+.content ul {
     height: 100%;
     margin-top: 50px;
 }
-.content ul li{
+
+.content ul li {
     width: 100%;
     height: 50px;
     display: flex;
@@ -40,10 +44,11 @@
     border-bottom-left-radius: 30px;
 }
 
-.content ul li:hover{
+.content ul li:hover {
     background-color: var(--white);
 }
-.content ul li a{
+
+.content ul li a {
     color: var(--white);
     width: 100%;
     height: 100%;
@@ -53,10 +58,12 @@
     text-decoration: none;
     white-space: nowrap;
 }
-.content ul li a:hover{
+
+.content ul li a:hover {
     color: var(--violet);
 }
-.content ul li a span{
+
+.content ul li a span {
     width: 60px;
     height: 100%;
     display: flex;

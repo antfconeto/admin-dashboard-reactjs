@@ -1,4 +1,4 @@
-.main{
+.main {
     position: absolute;
     transition: all 0.2s;
     height: 100vh;
@@ -8,13 +8,15 @@
     right: 0;
     background-color: var(--white);
     z-index: 10;
-} 
-.main.active{
+}
+
+.main.active {
     width: calc(100% - 60px);
     left: 60px;
 
 }
-.buttonMenu{
+
+.buttonMenu {
     position: fixed;
     left: 10px;
     top: 10px;
@@ -34,25 +36,29 @@
     border: 1px solid var(--violet);
     box-shadow: rgba(0, 0, 0, 0.08);
 }
-.buttonMenu:hover{
+
+.buttonMenu:hover {
     font-size: 25px;
 }
-.menuTop{
+
+.menuTop {
     margin-top: 15px;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-height: 40px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08) ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     padding-bottom: 10px;
 }
-.menuTop form{
+
+.menuTop form {
     width: 450px;
     display: flex;
     transition: 0.2s;
 }
-.menuTop form input{
+
+.menuTop form input {
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.08);
     outline: none;
@@ -60,13 +66,14 @@
     transition: 0.2s;
     padding: 10px 30px;
 }
-.menuTop form input:hover{
+
+.menuTop form input:hover {
     outline: auto;
     outline-color: var(--violet);
     color: var(--violet);
 }
 
-.menuTop form button{
+.menuTop form button {
     width: 50px;
     height: 100%;
     cursor: pointer;
@@ -79,17 +86,20 @@
     align-items: center;
     justify-content: center;
 }
-.menuTop form button:hover{
+
+.menuTop form button:hover {
     color: var(--violet);
 }
-.userCustumer{
+
+.userCustumer {
     position: relative;
     width: 100px;
     display: flex;
     justify-content: space-between;
     height: 100%;
 }
-.userCustumer img{
+
+.userCustumer img {
     width: 40px;
     height: 40px;
     object-fit: cover;
@@ -98,7 +108,7 @@
     transition: all 0.3s;
 }
 
-.userCustumer button{
+.userCustumer button {
     border: none;
     background-color: var(--white);
     width: 40px;
@@ -107,25 +117,29 @@
     cursor: pointer;
     transition: all 0.3s;
 }
-.userCustumer button:hover{
+
+.userCustumer button:hover {
     color: var(--violet);
 }
-.contentMain{
+
+.contentMain {
     width: 100%;
     position: relative;
     min-height: calc(100vh - 66px);
     display: flex;
     flex-direction: column;
 }
-.cardBox{
+
+.cardBox {
     display: grid;
-    grid-template-columns: repeat(4, 1fr );
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
     position: relative;
     padding: 20px;
     min-height: 200px;
 }
-.cardItem{
+
+.cardItem {
     background-color: var(--white);
     display: flex;
     padding: 20px;
@@ -137,66 +151,79 @@
     justify-content: space-between;
     transition: 0.2s;
 }
-.cardItem:hover{
+
+.cardItem:hover {
     width: 300px;
     background-color: var(--violet);
     max-height: 160px;
 }
-.cardItem h2{
+
+.cardItem h2 {
     font-size: 30px;
     color: var(--violet);
     font-weight: 600;
     text-align: center;
     white-space: nowrap;
 }
-.cardItem p{
+
+.cardItem p {
     color: var(--black2);
 }
-.cardItem:hover h2{
-    color:var(--white)
+
+.cardItem:hover h2 {
+    color: var(--white)
 }
-.cardItem:hover p{
+
+.cardItem:hover p {
     color: var(--white);
 }
-.icon{
+
+.icon {
     font-size: 40px;
     color: var(--black2);
 }
 
-.cardItem:hover .icon{
+.cardItem:hover .icon {
     color: var(--white);
 }
-.informationContent{
+
+.informationContent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.graficEarned{
+
+.graficEarned {
     position: relative;
     width: 500px;
     height: 100%;
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     margin-left: 20px;
 }
-.grafic{
+
+.grafic {
     display: block;
     width: 100%;
     height: 100%;
     border: 1px solid rgba(0, 0, 0, 0.08);
 }
-.informationGrafic{
+
+.informationGrafic {
     position: relative;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-.informationGrafic h4{
+
+.informationGrafic h4 {
     color: var(--violet);
 }
-.informationGrafic p{
+
+.informationGrafic p {
     color: var(--black2);
 }
-.commentsContent{
+
+.commentsContent {
     position: relative;
     min-width: 40%;
     box-shadow: rgba(0, 0, 0, 0.08);
@@ -205,7 +232,8 @@
     box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.08);
     margin-right: 20px;
 }
-.userInformation{
+
+.userInformation {
     position: relative;
     height: 40px;
     display: flex;
@@ -213,14 +241,16 @@
     padding: 15px;
     justify-content: space-between;
 }
-.user{
+
+.user {
     position: relative;
     display: flex;
     flex-direction: row;
     width: 35%;
     justify-content: space-between;
 }
-.user img{
+
+.user img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -228,105 +258,128 @@
     cursor: pointer;
     transition: 0.2s;
 }
-.user img:hover{
+
+.user img:hover {
     border: 2px solid var(--violet);
 }
-.user p{
+
+.user p {
     color: var(--black2);
 }
-@media (max-width: 1180px){
-.cardBox{
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap:30px
-}
-.cardItem{
-    min-height: 100px
-}
-.cardItem:hover{
-    width: auto;
-}
-.informationContent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-}
-.graficEarned{
-    width: 80%;
-    margin-left: 0;
-    height: auto;
-}
-.grafic{
-    width: 100%;
-    height: auto;
-    
-}
-.informationGrafic{
-    height: 100%;
-}
-.commentsContent{
-    margin-top: 20px;
-    width: 80%;
-    margin-right: 0;
-}
-}
-@media (max-width:780px){
 
+@media (max-width: 1180px) {
+    .cardBox {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px
+    }
 
-.menuTop form input{
-    left: 60px;
-    position: relative;
-    width: 50%;
-}
-.menuTop form button{
-    z-index: 10000;
-    background: transparent;
-}
-.cardBox{
-    grid-template-columns: repeat(1, 2fr);
-}
-.cardItem:hover{
-    width: auto;
-}
-.graficEarned{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .cardItem {
+        min-height: 100px
+    }
 
+    .cardItem:hover {
+        width: auto;
+    }
+
+    .informationContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .graficEarned {
+        width: 80%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .grafic {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .informationGrafic {
+        height: 100%;
+    }
+
+    .commentsContent {
+        margin-top: 20px;
+        width: 80%;
+        margin-right: 0;
+    }
 }
-.grafic{
-    width: 400px;
+
+@media (max-width:780px) {
+
+    .menuTop form button {
+        z-index: 10000;
+        background: transparent;
+    }
+
+    .cardBox {
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .cardItem:hover {
+        width: auto;
+    }
+
+    .graficEarned {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .grafic {
+        width: 400px;
+    }
+
+    .commentsContent {
+        width: 100%;
+        height: auto;
+    }
+
+    .userInformation {
+        padding: 20px;
+        width: auto;
+        height: auto;
+    }
+
+    .user {
+        width: 45%;
+    }
 }
-.commentsContent{
-    width: 100%;
-    height: auto;
-}
-.userInformation{
-    padding: 20px;
-    width: auto;
-    height: auto;
-}
-.user{
-    width: 45%;
-}
-}
-@media (max-width: 500px){
-.main{
-    width: 100%;
-    z-index: 1;
-}
-.main.active{
-    width: 100%;
-    left: 0;
-}
-.grafic{
-    width: 350px;
-}
-.userInformation{
-    flex-direction: column;
-    align-items: center;
-}
+
+@media (max-width: 500px) {
+
+    .menuTop form input {
+        left: 60px;
+        position: relative;
+        width: 50%;
+    }
+
+    .main {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .main.active {
+        width: 100%;
+        left: 0;
+    }
+
+    .grafic {
+        width: 350px;
+    }
+
+    .userInformation {
+        flex-direction: column;
+        align-items: center;
+    }
 }
