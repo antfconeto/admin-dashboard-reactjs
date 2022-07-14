@@ -1,10 +1,11 @@
-import React from "react";
+
 import "./MenuBar.style.css";
 import {BiHomeAlt} from "react-icons/bi"
 import {ImCoinDollar} from "react-icons/im"
 import {AiOutlineShoppingCart,AiOutlineInfoCircle } from "react-icons/ai"
 import {RiContactsLine,RiAndroidLine} from "react-icons/ri";
 const MenuBar = ()=>{
+
     const iconsMenu = [ <BiHomeAlt fontSize="30px"/>,
                         <ImCoinDollar fontSize="30px"/>,
                         <AiOutlineShoppingCart fontSize="30px"/>,

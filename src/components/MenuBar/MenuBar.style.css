@@ -6,7 +6,8 @@
     background-color: var(--violet);
     transition: all 0.2s;
     overflow: hidden;
-    
+    scroll-behavior: unset;
+
 }
 .content{
     width: 100%;
@@ -18,7 +19,7 @@
     white-space: nowrap;
     display: flex;
     align-items: flex-start;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .content .title span{
     font-size: 30px;

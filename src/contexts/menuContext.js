@@ -5,7 +5,7 @@ export const useMenuContext = ()=>{
     return useContext(MenuContext);
 }
 export const AppMenuContext = ({children}) => {
-    const [isMenuToggled, setToggleMenu] = useState(false)
+    const [isMenuToggled, setToggleMenu] = useState(true)
     const toggleMenu = ()=>{
         isMenuToggled ? setToggleMenu(false): setToggleMenu(true)
     }

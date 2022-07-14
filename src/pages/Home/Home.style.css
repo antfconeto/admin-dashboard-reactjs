@@ -1,13 +1,13 @@
 .main{
     position: absolute;
     transition: all 0.2s;
-    max-height: 100vh;
+    height: 100vh;
     left: 300px;
     width: calc(100% - 300px);
     overflow-x: hidden;
     right: 0;
     background-color: var(--white);
-    z-index: 1000;
+    z-index: 10;
 } 
 .main.active{
     width: calc(100% - 60px);
@@ -15,17 +15,26 @@
 
 }
 .buttonMenu{
-    position: relative;
+    position: fixed;
+    left: 10px;
+    top: 10px;
     width: 40px;
     height: 40px;
-    background-color: var(--white);
+    background-color: var(--violet);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     font-size: 20px;
-    border: none;
+    font-weight: 600;
     transition: all 0.2s;
+    z-index: 10000;
+    border-radius: 50%;
+    border: 1px solid var(--violet);
+    box-shadow: rgba(0, 0, 0, 0.08);
 }
 .buttonMenu:hover{
-    color: var(--violet);
     font-size: 25px;
 }
 .menuTop{
@@ -153,6 +162,7 @@
     font-size: 40px;
     color: var(--black2);
 }
+
 .cardItem:hover .icon{
     color: var(--white);
 }
@@ -163,13 +173,12 @@
 .graficEarned{
     position: relative;
     width: 500px;
-    height: 300px;
+    height: 100%;
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     margin-left: 20px;
 }
 .grafic{
-    display: flex;
-    position: relative;
+    display: block;
     width: 100%;
     height: 100%;
     border: 1px solid rgba(0, 0, 0, 0.08);
@@ -225,25 +234,35 @@
 .user p{
     color: var(--black2);
 }
-@media (max-width: 960px){
+@media (max-width: 1180px){
 .cardBox{
     grid-template-columns: repeat(2, 1fr);
+    grid-gap:30px
 }
 .cardItem{
     min-height: 100px
+}
+.cardItem:hover{
+    width: auto;
 }
 .informationContent{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
 }
 .graficEarned{
     width: 80%;
     margin-left: 0;
+    height: auto;
 }
 .grafic{
     width: 100%;
+    height: auto;
     
+}
+.informationGrafic{
+    height: 100%;
 }
 .commentsContent{
     margin-top: 20px;
@@ -251,11 +270,63 @@
     margin-right: 0;
 }
 }
-@media (max-width:640px){
+@media (max-width:780px){
+
+
+.menuTop form input{
+    left: 60px;
+    position: relative;
+    width: 50%;
+}
+.menuTop form button{
+    z-index: 10000;
+    background: transparent;
+}
 .cardBox{
     grid-template-columns: repeat(1, 2fr);
 }
 .cardItem:hover{
     width: auto;
+}
+.graficEarned{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.grafic{
+    width: 400px;
+}
+.commentsContent{
+    width: 100%;
+    height: auto;
+}
+.userInformation{
+    padding: 20px;
+    width: auto;
+    height: auto;
+}
+.user{
+    width: 45%;
+}
+}
+@media (max-width: 500px){
+.main{
+    width: 100%;
+    z-index: 1;
+}
+.main.active{
+    width: 100%;
+    left: 0;
+}
+.grafic{
+    width: 350px;
+}
+.userInformation{
+    flex-direction: column;
+    align-items: center;
 }
 }
