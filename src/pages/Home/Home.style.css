@@ -1,0 +1,261 @@
+.main{
+    position: absolute;
+    transition: all 0.2s;
+    max-height: 100vh;
+    left: 300px;
+    width: calc(100% - 300px);
+    overflow-x: hidden;
+    right: 0;
+    background-color: var(--white);
+    z-index: 1000;
+} 
+.main.active{
+    width: calc(100% - 60px);
+    left: 60px;
+
+}
+.buttonMenu{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: var(--white);
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    transition: all 0.2s;
+}
+.buttonMenu:hover{
+    color: var(--violet);
+    font-size: 25px;
+}
+.menuTop{
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08) ;
+    padding-bottom: 10px;
+}
+.menuTop form{
+    width: 450px;
+    display: flex;
+    transition: 0.2s;
+}
+.menuTop form input{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    outline: none;
+    border-radius: 40px;
+    transition: 0.2s;
+    padding: 10px 30px;
+}
+.menuTop form input:hover{
+    outline: auto;
+    outline-color: var(--violet);
+    color: var(--violet);
+}
+
+.menuTop form button{
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+    background-color: var(--white);
+    font-size: 30px;
+    border: none;
+    display: flex;
+    text-align: center;
+    transition: 0.2s;
+    align-items: center;
+    justify-content: center;
+}
+.menuTop form button:hover{
+    color: var(--violet);
+}
+.userCustumer{
+    position: relative;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.userCustumer img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.userCustumer button{
+    border: none;
+    background-color: var(--white);
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.userCustumer button:hover{
+    color: var(--violet);
+}
+.contentMain{
+    width: 100%;
+    position: relative;
+    min-height: calc(100vh - 66px);
+    display: flex;
+    flex-direction: column;
+}
+.cardBox{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr );
+    grid-gap: 30px;
+    position: relative;
+    padding: 20px;
+    min-height: 200px;
+}
+.cardItem{
+    background-color: var(--white);
+    display: flex;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    border-radius: 30px;
+    max-height: 150px;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.2s;
+}
+.cardItem:hover{
+    width: 300px;
+    background-color: var(--violet);
+    max-height: 160px;
+}
+.cardItem h2{
+    font-size: 30px;
+    color: var(--violet);
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+}
+.cardItem p{
+    color: var(--black2);
+}
+.cardItem:hover h2{
+    color:var(--white)
+}
+.cardItem:hover p{
+    color: var(--white);
+}
+.icon{
+    font-size: 40px;
+    color: var(--black2);
+}
+.cardItem:hover .icon{
+    color: var(--white);
+}
+.informationContent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.graficEarned{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    margin-left: 20px;
+}
+.grafic{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.informationGrafic{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.informationGrafic h4{
+    color: var(--violet);
+}
+.informationGrafic p{
+    color: var(--black2);
+}
+.commentsContent{
+    position: relative;
+    min-width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.08);
+    margin-right: 20px;
+}
+.userInformation{
+    position: relative;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: space-between;
+}
+.user{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    justify-content: space-between;
+}
+.user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.user img:hover{
+    border: 2px solid var(--violet);
+}
+.user p{
+    color: var(--black2);
+}
+@media (max-width: 960px){
+.cardBox{
+    grid-template-columns: repeat(2, 1fr);
+}
+.cardItem{
+    min-height: 100px
+}
+.informationContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.graficEarned{
+    width: 80%;
+    margin-left: 0;
+}
+.grafic{
+    width: 100%;
+    
+}
+.commentsContent{
+    margin-top: 20px;
+    width: 80%;
+    margin-right: 0;
+}
+}
+@media (max-width:640px){
+.cardBox{
+    grid-template-columns: repeat(1, 2fr);
+}
+.cardItem:hover{
+    width: auto;
+}
+}
