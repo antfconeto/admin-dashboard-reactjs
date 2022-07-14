@@ -1,6 +1,7 @@
 {
   "name": "my-own-dashboard",
   "version": "0.1.0",
+  "homepage": "my-own-dashboard/",
   "private": true,
   "dependencies": {
     "@nivo/line": "^0.79.1",
